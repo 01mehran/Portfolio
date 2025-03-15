@@ -18,7 +18,15 @@
 
 </head>
 
-<body class="bg-black font-poppiens text-white selection:bg-white selection:text-red ">
+<body class="bg-black font-poppiens text-white selection:bg-white selection:text-red">
+
+    <!-- PreLoading -->
+    <div class="flex flex-row gap-2 justify-center items-center h-screen bg-dark fixed top-0 w-full z-50" id="preLoading">
+        <div class="w-4 h-4 rounded-full bg-red-500 animate-bounce"></div>
+        <div class="w-4 h-4 rounded-full bg-red-500 animate-bounce [animation-delay:-.3s]"></div>
+        <div class="w-4 h-4 rounded-full bg-red-500 animate-bounce [animation-delay:-.5s]"></div>
+    </div>
+
     <!-- Indicatore -->
     <div class="fixed bottom-4 right-4 size-12 md:bottom-6 md:right-6 md:size-16 cursor-pointer p-1 rounded-full z-20 transition-all duration-500 translate-x-[150%]"
         id="indicatore">
@@ -27,8 +35,7 @@
     </div>
 
     <!-- Header -->
-    <header class="py-4 fixed top-0 left-0 w-full z-50 transition-all duration-300" 
-    data-aos="fade-in">
+    <header class="py-4 fixed top-0 left-0 w-full z-40 transition-all duration-300" data-aos="fade-in">
         <div class=" mx-auto container px-4 ">
             <nav class="flex justify-between items-center">
                 <!-- Title -->
@@ -85,8 +92,7 @@
         <section class="mx-auto container px-6 relative pt-20 md:pt-42" id="home">
             <div class="flex flex-col-reverse md:flex-row justify-center ">
                 <!-- Title -->
-                <div class="md:w-1/2 p-8 lg:py-24 lg:px-18 text-center md:text-left space-y-3"
-                data-aos="fade-right">
+                <div class="md:w-1/2 p-8 lg:py-24 lg:px-18 text-center md:text-left space-y-3" data-aos="fade-right">
                     <h2 class=" text-xl sm:text-2xl lg:text-3xl md:text-nowrap">Hey, I'm <span
                             class="first-letter:text-red inline-block">Mehran</span> <span
                             class="first-letter:text-red inline-block">Mohamadi</span> </h2>
@@ -103,8 +109,8 @@
                     </div>
                 </div>
                 <!-- Hero image -->
-                <div
-                    class=" mx-auto relative w-[72vw] h-[72vw] sm:w-76 sm:h-76 p-1 overflow-hidden rounded-full -mt-12 lg:mt-0" data-aos="fade-left">
+                <div class=" mx-auto relative w-[72vw] h-[72vw] sm:w-76 sm:h-76 p-1 overflow-hidden rounded-full -mt-12 lg:mt-0"
+                    data-aos="fade-left">
                     <div
                         class=" absolute inset-0 rounded-full border-[2px] border-transparent border-t-red border-b-red animate-spin z-10 overflow-hidden">
                     </div>
@@ -119,13 +125,15 @@
 
         <!-- Works-->
         <section class="mx-auto container px-6 py-28 relative" id="works">
-            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">Works</h2>
+            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">
+                Works</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center max-w-6xl gap-20 mx-auto  ">
 
                 <!-- Projects -->
 
                 <!-- 1_Analog Clock -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
+                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+                    data-aos="fade-up">
                     <img src="images/clock.png" loading="lazy"
                         class="object-cover w-full h-full rounded-t-md md:rounded-sm ">
                     <!-- Layer -->
@@ -148,7 +156,8 @@
                 </article>
 
                 <!-- 2_Password Generatore -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
+                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+                    data-aos="fade-up">
                     <img src="images/passGen.png" loading="lazy"
                         class="object-cover w-full h-full rounded-t-md md:rounded-sm">
                     <!-- Layer -->
@@ -171,7 +180,8 @@
                 </article>
 
                 <!-- 3_Calculatore -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
+                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+                    data-aos="fade-up">
                     <img src="images/calculator.png" loading="lazy"
                         class="object-fill w-full h-full rounded-t-md md:rounded-sm ">
                     <!-- Layer -->
@@ -193,7 +203,8 @@
                 </article>
 
                 <!-- 4_dragon -->
-                <article class=" max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
+                <article class=" max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+                    data-aos="fade-up">
                     <img src="images/dragon.png" loading="lazy"
                         class="object-fill w-full h-full rounded-t-md md:rounded-sm ">
                     <!-- Layer -->
@@ -216,7 +227,8 @@
                 </article>
 
                 <!-- 5_checkbox -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
+                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+                    data-aos="fade-up">
                     <img src="images/check.png" loading="lazy"
                         class="object-fill w-full h-full rounded-t-md md:rounded-sm ">
 
@@ -239,7 +251,8 @@
                 </article>
 
                 <!-- 6_passValidation -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
+                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+                    data-aos="fade-up">
                     <img src="images/passValidation.png" loading="lazy"
                         class="object-center w-full h-full rounded-t-md md:rounded-sm drop-shadow-lg ">
                     <!-- Layer -->
@@ -267,10 +280,11 @@
 
         <!-- Skills-->
         <section class="mx-auto container px-6 py-28 relative" id="skills">
-            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">Skills</h2>
+            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">
+                Skills</h2>
             <picture class="flex justify-center items-center flex-wrap gap-2 md:gap-10  ">
                 <!-- skills 1 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-up" >
+                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-up">
                     <img class="w-26 transform transition hover:scale-105 " src="images/html-icon.webp" alt="html-icon">
                     <small class="text-lg tracking-wide font-medium">HTML</small>
                 </article>
@@ -316,8 +330,8 @@
 
         <!-- Contact me -->
         <section class="mx-auto container px-6 py-28 relative" id="contactMe">
-            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">Contact <span
-                    class="first-letter:text-red inline-block">me</span></h2>
+            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">
+                Contact <span class="first-letter:text-red inline-block">me</span></h2>
 
             <div class="max-w-6xl">
                 <!-- Form -->
@@ -334,7 +348,7 @@
                     <textarea rows="6" class="border-none outline-none p-4 rounded-sm bg-dark caret-red resize-none"
                         placeholder="Message" name="Message" required data-aos="fade-up"></textarea>
                     <button type="submit"
-                     class=" block mx-auto px-10 py-1 md:px-16 md:py-2 rounded-md mt-6 text-lg transition-all transform hover:translate-y-1 cursor-pointer  bg-red">Submit
+                        class=" block mx-auto px-10 py-1 md:px-16 md:py-2 rounded-md mt-6 text-lg transition-all transform hover:translate-y-1 cursor-pointer  bg-red">Submit
                     </button>
                 </form>
             </div>
@@ -371,7 +385,7 @@
 
     <!-- Aos Animation; -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
+
 </body>
 
 </html>

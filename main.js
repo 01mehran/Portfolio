@@ -1,4 +1,8 @@
-// document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
+  const preLoader = document.querySelector("#preLoading");
+  preLoader.style.display = "none";
+});
+
 // Selecting Elements;
 const _ = document;
 const openMenu = _.querySelector("#menubar");
@@ -10,7 +14,6 @@ const header = _.querySelector("header");
 const form = document.querySelector("#form");
 const links = mobileMenu.querySelectorAll("a");
 
-
 const toggleMobileMenu = function (width, display) {
   mobileMenu.style.right = width;
   indicatoreBtn.style.display = display;
@@ -19,7 +22,7 @@ const toggleMobileMenu = function (width, display) {
 
 mobileMenu.addEventListener("click", (e) => {
   if (e.target.tagName === "A") {
-    toggleMobileMenu("-400px", "none")
+    toggleMobileMenu("-400px", "none");
   }
 });
 
@@ -58,7 +61,6 @@ window.onscroll = () => {
     header.style.backgroundColor = "transparent";
   }
 };
-
 
 // Create overlay;
 const overlay = document.createElement("div");
@@ -212,9 +214,9 @@ const exampleTyping = new AutoTyping("#job", exampleText, {
   waitBetweenWords: 500,
 });
 exampleTyping.start();
-// });
 
+// Aos Animation;
 AOS.init({
   duration: 1000,
-  once: true
+  once: true,
 });
