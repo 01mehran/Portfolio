@@ -78,14 +78,6 @@ closeBtn.addEventListener("click", () => {
   toggleMobileMenu("-400px", "block");
 });
 
-// close mobile menue with Scape key;
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    mobileMenu.style.right = "-400px";
-    overlay.classList.remove("overlay");
-  }
-});
-
 // Reset form after submiting;
 form.addEventListener("submit", function () {
   form.reset();
