@@ -12,6 +12,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--Script -->
     <script defer src="./main.js"></script>
+    <!-- Aos Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
 
@@ -24,7 +27,8 @@
     </div>
 
     <!-- Header -->
-    <header class="py-4 fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <header class="py-4 fixed top-0 left-0 w-full z-50 transition-all duration-300" 
+    data-aos="fade-in">
         <div class=" mx-auto container px-4 ">
             <nav class="flex justify-between items-center">
                 <!-- Title -->
@@ -81,7 +85,8 @@
         <section class="mx-auto container px-6 relative pt-20 md:pt-42" id="home">
             <div class="flex flex-col-reverse md:flex-row justify-center ">
                 <!-- Title -->
-                <div class="md:w-1/2 p-8 lg:py-24 lg:px-18 text-center md:text-left space-y-3 ">
+                <div class="md:w-1/2 p-8 lg:py-24 lg:px-18 text-center md:text-left space-y-3"
+                data-aos="fade-right">
                     <h2 class=" text-xl sm:text-2xl lg:text-3xl md:text-nowrap">Hey, I'm <span
                             class="first-letter:text-red inline-block">Mehran</span> <span
                             class="first-letter:text-red inline-block">Mohamadi</span> </h2>
@@ -99,7 +104,7 @@
                 </div>
                 <!-- Hero image -->
                 <div
-                    class=" mx-auto relative w-[72vw] h-[72vw] sm:w-76 sm:h-76 p-1 overflow-hidden rounded-full -mt-12 lg:mt-0 ">
+                    class=" mx-auto relative w-[72vw] h-[72vw] sm:w-76 sm:h-76 p-1 overflow-hidden rounded-full -mt-12 lg:mt-0" data-aos="fade-left">
                     <div
                         class=" absolute inset-0 rounded-full border-[2px] border-transparent border-t-red border-b-red animate-spin z-10 overflow-hidden">
                     </div>
@@ -114,13 +119,13 @@
 
         <!-- Works-->
         <section class="mx-auto container px-6 py-28 relative" id="works">
-            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14">Works</h2>
+            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">Works</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center max-w-6xl gap-20 mx-auto  ">
 
                 <!-- Projects -->
 
                 <!-- 1_Analog Clock -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group">
+                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
                     <img src="images/clock.png" loading="lazy"
                         class="object-cover w-full h-full rounded-t-md md:rounded-sm ">
                     <!-- Layer -->
@@ -143,7 +148,7 @@
                 </article>
 
                 <!-- 2_Password Generatore -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group">
+                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
                     <img src="images/passGen.png" loading="lazy"
                         class="object-cover w-full h-full rounded-t-md md:rounded-sm">
                     <!-- Layer -->
@@ -166,7 +171,7 @@
                 </article>
 
                 <!-- 3_Calculatore -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group">
+                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
                     <img src="images/calculator.png" loading="lazy"
                         class="object-fill w-full h-full rounded-t-md md:rounded-sm ">
                     <!-- Layer -->
@@ -188,7 +193,7 @@
                 </article>
 
                 <!-- 4_dragon -->
-                <article class=" max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group">
+                <article class=" max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
                     <img src="images/dragon.png" loading="lazy"
                         class="object-fill w-full h-full rounded-t-md md:rounded-sm ">
                     <!-- Layer -->
@@ -211,8 +216,9 @@
                 </article>
 
                 <!-- 5_checkbox -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group">
-                       <img src="images/check.png" loading="lazy" class="object-fill w-full h-full rounded-t-md md:rounded-sm ">
+                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
+                    <img src="images/check.png" loading="lazy"
+                        class="object-fill w-full h-full rounded-t-md md:rounded-sm ">
 
                     <!-- Layer -->
                     <div
@@ -223,8 +229,7 @@
 
                         </div>
                         <div class="flex items-center gap-1">
-                            <a href="https://01mehran.github.io/CheckBox/" target="_blank"
-                                class="text-xs md:mt-12">
+                            <a href="https://01mehran.github.io/CheckBox/" target="_blank" class="text-xs md:mt-12">
                                 Live Demo
                                 <i class='bx bx-link-external'></i>
                             </a>
@@ -234,7 +239,7 @@
                 </article>
 
                 <!-- 6_passValidation -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group">
+                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group" data-aos="fade-up">
                     <img src="images/passValidation.png" loading="lazy"
                         class="object-center w-full h-full rounded-t-md md:rounded-sm drop-shadow-lg ">
                     <!-- Layer -->
@@ -262,39 +267,39 @@
 
         <!-- Skills-->
         <section class="mx-auto container px-6 py-28 relative" id="skills">
-            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14">Skills</h2>
+            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">Skills</h2>
             <picture class="flex justify-center items-center flex-wrap gap-2 md:gap-10  ">
                 <!-- skills 1 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm">
+                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-up" >
                     <img class="w-26 transform transition hover:scale-105 " src="images/html-icon.webp" alt="html-icon">
                     <small class="text-lg tracking-wide font-medium">HTML</small>
                 </article>
                 <!-- skills 2 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm">
+                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-up">
                     <img class="w-26 transform transition hover:scale-105" src="images/css-icon.webp" alt="css-icon">
                     <small class="text-lg tracking-wide font-medium">CSS</small>
                 </article>
                 <!-- skills 3 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm">
+                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-up">
                     <img class="w-26 transform transition hover:scale-105"
                         src="images/javascript-programming-language-icon.webp" alt="js-icon">
                     <small class="text-lg tracking-wide font-medium">Javascript</small>
                 </article>
 
                 <!-- skills 4 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm">
+                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-down">
                     <img class="w-26 transform transition hover:scale-105" src="images/visual-studio-code-icon.webp"
                         alt="vscode-icon">
                     <small class="text-lg tracking-wide font-medium">Vs code</small>
                 </article>
                 <!-- skills 5 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm">
+                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-down">
                     <img class="w-26 transform transition hover:scale-105" src="images/tailwind-css-icon.webp"
                         alt="tailwind-css-icon">
                     <small class="text-lg tracking-wide font-medium">Tailwind</small>
                 </article>
                 <!-- skills 6 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm">
+                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-down">
                     <img class="w-26 transform transition hover:scale-105" src="images/figma-icon.webp"
                         alt="tailwind-css-icon">
                     <small class="text-lg tracking-wide font-medium">Figma</small>
@@ -311,24 +316,25 @@
 
         <!-- Contact me -->
         <section class="mx-auto container px-6 py-28 relative" id="contactMe">
-            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14">Contact <span
+            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">Contact <span
                     class="first-letter:text-red inline-block">me</span></h2>
 
             <div class="max-w-6xl">
                 <!-- Form -->
-                <form action="https://api.web3forms.com/submit" method="POST" class="mx-auto lg:w-4/6  flex flex-col space-y-5" id="form">
-                  
+                <form action="https://api.web3forms.com/submit" method="POST"
+                    class="mx-auto lg:w-4/6  flex flex-col space-y-5" id="form">
+
                     <!-- access key input -->
                     <input type="hidden" name="access_key" value="03090a62-0231-4ad5-b4bc-bff9235fa448">
 
                     <input class="py-5 border-none outline-none px-4 rounded-sm bg-dark caret-red" type="text"
-                        placeholder="Name" name="name" required>
+                        placeholder="Name" name="name" required data-aos="fade-right">
                     <input class="py-5 border-none outline-none px-4 rounded-sm bg-dark caret-red" type="email"
-                        placeholder="Email" name="email" required>
+                        placeholder="Email" name="email" required data-aos="fade-right">
                     <textarea rows="6" class="border-none outline-none p-4 rounded-sm bg-dark caret-red resize-none"
-                        placeholder="Message" name="Message" required></textarea>
+                        placeholder="Message" name="Message" required data-aos="fade-up"></textarea>
                     <button type="submit"
-                        class=" block mx-auto px-10 py-1 md:px-16 md:py-2 rounded-md mt-6 text-lg transition transform hover:translate-y-1 cursor-pointer  bg-red">Submit
+                     class=" block mx-auto px-10 py-1 md:px-16 md:py-2 rounded-md mt-6 text-lg transition-all transform hover:translate-y-1 cursor-pointer  bg-red">Submit
                     </button>
                 </form>
             </div>
@@ -360,6 +366,12 @@
                 class='bx bxs-heart text-red'></i></small>
         <small class="tracking-wide text-md font-medium">mehranmohamdi1311@gmail.com</small>
     </footer>
+
+
+
+    <!-- Aos Animation; -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
 </body>
 
 </html>

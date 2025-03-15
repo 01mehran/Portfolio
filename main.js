@@ -213,3 +213,8 @@ const exampleTyping = new AutoTyping("#job", exampleText, {
 });
 exampleTyping.start();
 // });
+
+AOS.init({
+  duration: 1000,
+  once: true
+});
