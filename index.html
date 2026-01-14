@@ -1,398 +1,607 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <!-- Css -->
-    <link href="./output.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet" />
     <!-- Title -->
     <title>Mehran_Mohamadi</title>
     <!-- Icon -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!--Script -->
-    <script defer src="./main.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/autoTyping.js"></script>
+
     <!-- Aos Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
-
-</head>
-
-<body class="bg-black font-poppiens text-white selection:bg-white selection:text-red">
-
+  <body
+    class="bg-black font-poppiens text-white selection:bg-white selection:text-red"
+  >
     <!-- PreLoading -->
-    <div class="flex flex-row gap-2 justify-center items-center h-screen bg-dark fixed top-0 w-full z-50"
-        id="preLoading">
-        <div class="w-4 h-4 rounded-full bg-red-500 animate-bounce"></div>
-        <div class="w-4 h-4 rounded-full bg-red-500 animate-bounce [animation-delay:-.3s]"></div>
-        <div class="w-4 h-4 rounded-full bg-red-500 animate-bounce [animation-delay:-.5s]"></div>
+    <div
+      class="flex flex-row gap-2 justify-center items-center h-screen bg-dark fixed top-0 w-full z-50"
+      id="preLoading"
+    >
+      <div class="w-4 h-4 rounded-full bg-red-500 animate-bounce"></div>
+      <div
+        class="w-4 h-4 rounded-full bg-red-500 animate-bounce [animation-delay:-.3s]"
+      ></div>
+      <div
+        class="w-4 h-4 rounded-full bg-red-500 animate-bounce [animation-delay:-.5s]"
+      ></div>
     </div>
 
     <!-- Indicatore -->
-    <div class="fixed bottom-4 right-4 size-12 md:bottom-6 md:right-6 md:size-16 cursor-pointer p-1 rounded-full z-20 transition-all duration-500 translate-x-[150%]"
-        id="indicatore">
-        <div class="bg-red w-full h-full rounded-full grid place-content-center"><i
-                class='bx bxs-chevron-up text-lg md:text-2xl'></i></div>
+    <div
+      class="fixed bottom-4 right-4 size-12 md:bottom-6 md:right-6 md:size-16 cursor-pointer p-1 rounded-full z-20 transition-all duration-500 translate-x-[150%]"
+      id="indicatore"
+    >
+      <div class="bg-red w-full h-full rounded-full grid place-content-center">
+        <i class="bx bxs-chevron-up text-lg md:text-2xl"></i>
+      </div>
     </div>
 
     <!-- Header -->
-    <header class="py-4 fixed top-0 left-0 w-full z-40 transition-all duration-300" data-aos="fade-in">
-        <div class=" mx-auto container px-4 ">
-            <nav class="flex justify-between items-center">
-                <!-- Title -->
-                <h1 class="text-2xl md:text-3xl first-letter:text-red font-medium text-white">Mehran.</h1>
-                <!-- Navbar -->
-                <ul class="lg:flex space-x-10 hidden">
-                    <li class="text-xl list-none"><a href="#home"
-                            class="underlineEffect text-white no-underline ">Home</a>
-                    </li>
-                    <li class="text-xl list-none"><a href="#contactMe"
-                            class="underlineEffect text-white no-underline">Contact
-                            me</a>
-                    </li>
-                    <li class="text-xl list-none"><a href="#works"
-                            class="underlineEffect text-white no-underline">Works</a>
-                    </li>
-                    <li class="text-xl list-none"><a href="#skills"
-                            class="underlineEffect text-white no-underline">skills</a>
-                    </li>
-                </ul>
-                <!-- Menu Icon -->
-                <article class="lg:hidden " id="menubar">
-                    <i class='bx bx-menu-alt-right text-white cursor-pointer text-4xl md:text-5xl  '></i>
-                </article>
-            </nav>
-        </div>
-        <!-- Mobile Menu-->
-        <ul class="transform right-[-300px] fixed top-0 h-full w-[300px] rounded-l-2xl space-y-6 bg-gradient-to-b from-red to-[rgb(0, 0, 0)] transition-all duration-300 z-50 pt-28 px-8"
-            id="mobile-menu">
-            <!-- close button -->
-            <article class="absolute right-12 top-6 cursor-pointer hover:scale-110 transition">
-                <i class='bx bx-x text-5xl text-white' id="close-btn"></i>
-            </article>
+    <header
+      class="py-4 fixed top-0 left-0 w-full z-40 transition-all duration-300"
+      data-aos="fade-in"
+    >
+      <div class="mx-auto container px-4">
+        <nav class="flex justify-between items-center">
+          <!-- Title -->
+          <h1
+            class="text-2xl md:text-3xl first-letter:text-red font-medium text-white"
+          >
+            Mehran.
+          </h1>
+          <!-- Navbar -->
+          <ul class="lg:flex space-x-10 hidden">
+            <li class="text-xl list-none">
+              <a href="#home" class="underlineEffect text-white no-underline"
+                >Home</a
+              >
+            </li>
+            <li class="text-xl list-none">
+              <a
+                href="#contactMe"
+                class="underlineEffect text-white no-underline"
+                >Contact me</a
+              >
+            </li>
+            <li class="text-xl list-none">
+              <a href="#works" class="underlineEffect text-white no-underline"
+                >Works</a
+              >
+            </li>
+            <li class="text-xl list-none">
+              <a href="#skills" class="underlineEffect text-white no-underline"
+                >skills</a
+              >
+            </li>
+          </ul>
+          <!-- Menu Icon -->
+          <article class="lg:hidden" id="menubar">
+            <i
+              class="bx bx-menu-alt-right text-white cursor-pointer text-4xl md:text-5xl"
+            ></i>
+          </article>
+        </nav>
+      </div>
+      <!-- Mobile Menu-->
+      <ul
+        class="transform right-[-300px] fixed top-0 h-full w-[300px] rounded-l-2xl space-y-6 bg-gradient-to-b from-red to-[rgb(0, 0, 0)] transition-all duration-300 z-50 pt-28 px-8"
+        id="mobile-menu"
+      >
+        <!-- close button -->
+        <article
+          class="absolute right-12 top-6 cursor-pointer hover:scale-110 transition"
+        >
+          <i class="bx bx-x text-5xl text-white" id="close-btn"></i>
+        </article>
 
-            <li class="text-xl list-none"><a href="#home" class="text-white 
-                hover:px-3 shadow-md transition-all duration-300 rounded-r-lg text-xl px-6">Home</a>
-            </li>
-            <li class="text-xl list-none"><a href="#contactMe" class="text-white 
-                hover:px-3 shadow-md transition-all duration-300 rounded-r-lg text-xl px-6">Contact me</a>
-            </li>
-            <li class="text-xl list-none"><a href="#works" class="text-white 
-                hover:px-3 shadow-md transition-all duration-300 rounded-r-lg text-xl px-6">Works</a>
-            </li>
-            <li class="text-xl list-none"><a href="#skills" class="text-white 
-                hover:px-3 shadow-md transition-all duration-300 rounded-r-lg text-xl px-6">Skills</a>
-            </li>
-        </ul>
+        <li class="text-xl list-none">
+          <a
+            href="#home"
+            class="text-white hover:px-3 shadow-md transition-all duration-300 rounded-r-lg text-xl px-6"
+            >Home</a
+          >
+        </li>
+        <li class="text-xl list-none">
+          <a
+            href="#contactMe"
+            class="text-white hover:px-3 shadow-md transition-all duration-300 rounded-r-lg text-xl px-6"
+            >Contact me</a
+          >
+        </li>
+        <li class="text-xl list-none">
+          <a
+            href="#works"
+            class="text-white hover:px-3 shadow-md transition-all duration-300 rounded-r-lg text-xl px-6"
+            >Works</a
+          >
+        </li>
+        <li class="text-xl list-none">
+          <a
+            href="#skills"
+            class="text-white hover:px-3 shadow-md transition-all duration-300 rounded-r-lg text-xl px-6"
+            >Skills</a
+          >
+        </li>
+      </ul>
     </header>
 
     <!-- Main content -->
     <main class="mt-20 sm:mt-0">
+      <!-- Hero -->
+      <section class="mx-auto container px-6 relative pt-20 md:pt-42" id="home">
+        <div class="flex flex-col-reverse md:flex-row justify-center">
+          <!-- Title -->
+          <div
+            class="md:w-1/2 p-8 lg:py-24 lg:px-18 text-center md:text-left space-y-3"
+            data-aos="fade-right"
+          >
+            <h2 class="text-xl sm:text-2xl lg:text-3xl md:text-nowrap">
+              Hey, I'm
+              <span class="first-letter:text-red inline-block">Mehran</span>
+              <span class="first-letter:text-red inline-block">Mohamadi</span>
+            </h2>
 
-        <!-- Hero -->
-        <section class="mx-auto container px-6 relative pt-20 md:pt-42" id="home">
-            <div class="flex flex-col-reverse md:flex-row justify-center ">
-                <!-- Title -->
-                <div class="md:w-1/2 p-8 lg:py-24 lg:px-18 text-center md:text-left space-y-3" data-aos="fade-right">
-                    <h2 class=" text-xl sm:text-2xl lg:text-3xl md:text-nowrap">Hey, I'm <span
-                            class="first-letter:text-red inline-block">Mehran</span> <span
-                            class="first-letter:text-red inline-block">Mohamadi</span> </h2>
-
-                    <div>
-                        <p class="lg:text-4xl text-md sm:text-2xl">I'm a
-                            <span id="job" class="text-red font-medium"></span>
-                        </p>
-                        <article class="flex items-center space-x-3 justify-center md:justify-start ">
-                            <a href="#works" class="mt-14 block text-lg text-center">See more
-                                <i class='bx bx-down-arrow-alt'></i>
-                            </a>
-                        </article>
-                    </div>
-                </div>
-                <!-- Hero image -->
-                <div class=" mx-auto relative w-[72vw] h-[72vw] sm:w-76 sm:h-76 p-1 overflow-hidden rounded-full -mt-12 lg:mt-0"
-                    data-aos="fade-left">
-                    <div
-                        class=" absolute inset-0 rounded-full border-[2px] border-transparent border-t-red border-b-red animate-spin z-10 overflow-hidden">
-                    </div>
-                    <img src="images/me.png" alt="MyImage" class="absolute top-5 z-20" loading="lazy">
-                </div>
+            <div>
+              <p class="lg:text-4xl text-md sm:text-2xl">
+                I'm a
+                <span id="job" class="text-red font-medium"></span>
+              </p>
+              <article
+                class="flex items-center space-x-3 justify-center md:justify-start"
+              >
+                <a href="#works" class="mt-14 block text-lg text-center"
+                  >See more
+                  <i class="bx bx-down-arrow-alt"></i>
+                </a>
+              </article>
             </div>
-            <!-- bubble -->
-            <div class="hidden lg:block absolute size-64 left-0 blur-[300px] rounded-full top-30 bg-red -z-100">
+          </div>
+          <!-- Hero image -->
+          <div
+            class="mx-auto relative w-[72vw] h-[72vw] sm:w-76 sm:h-76 p-1 overflow-hidden rounded-full -mt-12 lg:mt-0"
+            data-aos="fade-left"
+          >
+            <div
+              class="absolute inset-0 rounded-full border-[2px] border-transparent border-t-red border-b-red animate-spin z-10 overflow-hidden"
+            ></div>
+            <img
+              src="images/me.png"
+              alt="MyImage"
+              class="absolute top-5 z-20"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <!-- bubble -->
+        <div
+          class="hidden lg:block absolute size-64 left-0 blur-[300px] rounded-full top-30 bg-red -z-100"
+        ></div>
+      </section>
+
+      <!-- Works-->
+      <section class="mx-auto container px-6 py-28 relative" id="works">
+        <h2
+          class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14"
+          data-aos="fade-right"
+        >
+          Works
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center max-w-6xl gap-20 mx-auto"
+        >
+          <!-- Projects -->
+
+          <!-- 1_Analog Clock -->
+          <article
+            class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+            data-aos="fade-up"
+          >
+            <img
+              src="./images/project_demo_img/clock.png"
+              loading="lazy"
+              class="object-cover w-full h-full rounded-t-md md:rounded-sm"
+            />
+            <!-- Layer -->
+            <div
+              class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0 md:duration-300 overflow-hidden"
+            >
+              <!--  -->
+              <div class="flex items-center gap-1 overflow-hidden">
+                <p class="text-xs md:text-2xl">Analog Clock</p>
+                <i class="bx bxs-watch lg:text-3xl"></i>
+              </div>
+              <!--  -->
+              <div class="flex items-center gap-1 overflow-hidden">
+                <a
+                  href="https://dark-analog-clock.vercel.app/"
+                  target="_blank"
+                  class="text-xs md:mt-12"
+                >
+                  Live Demo
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
             </div>
-        </section>
+          </article>
 
-
-        <!-- Works-->
-        <section class="mx-auto container px-6 py-28 relative" id="works">
-            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">
-                Works</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center max-w-6xl gap-20 mx-auto  ">
-
-                <!-- Projects -->
-
-                <!-- 1_Analog Clock -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
-                    data-aos="fade-up">
-                    <img src="./images/project_demo_img/clock.png" loading="lazy"
-                        class="object-cover w-full h-full rounded-t-md md:rounded-sm ">
-                    <!-- Layer -->
-                    <div
-                        class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0  md:duration-300 overflow-hidden">
-                        <!--  -->
-                        <div class="flex items-center gap-1 overflow-hidden">
-                            <p class="text-xs md:text-2xl ">Analog Clock</p>
-                            <i class='bx bxs-watch lg:text-3xl'></i>
-                        </div>
-                        <!--  -->
-                        <div class="flex items-center gap-1 overflow-hidden">
-                            <a href="https://dark-analog-clock.vercel.app/" target="_blank" class="text-xs md:mt-12 ">
-                                Live Demo
-                                <i class='bx bx-link-external'></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- 2_Password Generatore -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
-                    data-aos="fade-up">
-                    <img src="./images/project_demo_img/passGen.png" loading="lazy"
-                        class="object-cover w-full h-full rounded-t-md md:rounded-sm">
-                    <!-- Layer -->
-                    <div
-                        class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0  md:duration-300 overflow-hidden">
-                        <div class="flex items-center gap-1 overflow-hidden">
-                            <p class="text-xs md:text-2xl ">PassGeneratore</p>
-                            <i class='bx bxs-lock-alt lg:text-3xl'></i>
-
-                        </div>
-                        <div class="flex items-center gap-1 overflow-hidden">
-                            <a href="https://password-generator-two-omega-77.vercel.app/" target="_blank"
-                                class="text-xs md:mt-12">Live
-                                Demo
-                                <i class='bx bx-link-external'></i>
-                            </a>
-
-                        </div>
-                    </div>
-                </article>
-
-                <!-- 3_Calculatore -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
-                    data-aos="fade-up">
-                    <img src="./images/project_demo_img/calculatore.png" loading="lazy"
-                        class="object-fill w-full h-full rounded-t-md md:rounded-sm ">
-                    <!-- Layer -->
-                    <div
-                        class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0  md:duration-300 overflow-hidden">
-                        <div class="flex items-center gap-1 overflow-hidden">
-                            <p class="text-xs md:text-2xl">Calculator</p>
-                            <i class='bx bx-calculator md:text-3xl'></i>
-
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <a href="https://calculator-delta-six-27.vercel.app/" target="_blank"
-                                class="text-xs md:mt-12">
-                                Live Demo
-                                <i class='bx bx-link-external'></i>
-                            </a>
-
-                        </div>
-                    </div>
-                </article>
-
-                <!-- 4_UpdateCssVariablesWithJS -->
-                <article class=" max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
-                    data-aos="fade-up">
-                    <img src="./images/project_demo_img/UpdateCssVar.png" loading="lazy"
-                        class="object-fill w-full h-full rounded-t-md md:rounded-sm ">
-                    <!-- Layer -->
-                    <div
-                        class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0  md:duration-300 overflow-hidden">
-                        <div class="flex items-center gap-1 overflow-hidden">
-                            <p class="text-xs md:text-2xl">Editing Image</p>
-                            <i class='bx bx-edit  md:text-3xl'></i>
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <a href="https://update-css-variables-with-js-nu.vercel.app/" target="_blank"
-                                class="text-xs md:mt-12">
-                                Live Demo
-                                <i class='bx bx-link-external'></i>
-                            </a>
-
-                        </div>
-                    </div>
-                </article>
-
-                <!-- 5_To-Do List App -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
-                    data-aos="fade-up">
-                    <img src="./images/project_demo_img/To-DoListApp.png" loading="lazy"
-                        class="object-fill w-full h-full rounded-t-md md:rounded-sm ">
-
-                    <!-- Layer -->
-                    <div
-                        class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0  md:duration-300 overflow-hidden">
-                        <div class="flex items-center gap-1 overflow-hidden">
-                            <p class="text-xs md:text-2xl">To-Do List App</p>
-                            <i class='bx bx-checkbox-checked md:text-4xl'></i>
-
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <a href="https://to-do-list-app-seven-zeta.vercel.app/" target="_blank"
-                                class="text-xs md:mt-12">
-                                Live Demo
-                                <i class='bx bx-link-external'></i>
-                            </a>
-
-                        </div>
-                    </div>
-                </article>
-
-                <!-- 6_StopWatch -->
-                <article class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
-                    data-aos="fade-up">
-                    <img src="./images/project_demo_img/Stopwatch.png" loading="lazy"
-                        class="object-center w-full h-full rounded-t-md md:rounded-sm drop-shadow-lg ">
-                    <!-- Layer -->
-                    <div
-                        class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0  md:duration-300 overflow-hidden">
-                        <div class="flex items-center gap-1 overflow-hidden">
-                            <p class="text-xs md:text-2xl">StopWatch</p>
-                            <i class='bx bx-stopwatch md:text-3xl'></i>
-
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <a href="https://stop-watch-sigma-six.vercel.app/" target="_blank" class="text-xs md:mt-12">
-                                Live Demo
-                                <i class='bx bx-link-external'></i>
-                            </a>
-
-                        </div>
-                    </div>
-                </article>
-
+          <!-- 2_Password Generatore -->
+          <article
+            class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+            data-aos="fade-up"
+          >
+            <img
+              src="./images/project_demo_img/passGen.png"
+              loading="lazy"
+              class="object-cover w-full h-full rounded-t-md md:rounded-sm"
+            />
+            <!-- Layer -->
+            <div
+              class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0 md:duration-300 overflow-hidden"
+            >
+              <div class="flex items-center gap-1 overflow-hidden">
+                <p class="text-xs md:text-2xl">PassGeneratore</p>
+                <i class="bx bxs-lock-alt lg:text-3xl"></i>
+              </div>
+              <div class="flex items-center gap-1 overflow-hidden">
+                <a
+                  href="https://password-generator-two-omega-77.vercel.app/"
+                  target="_blank"
+                  class="text-xs md:mt-12"
+                  >Live Demo
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
             </div>
-        </section>
+          </article>
 
-
-        <!-- Skills-->
-        <section class="mx-auto container px-6 py-28 relative" id="skills">
-            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">
-                Skills</h2>
-            <picture class="flex justify-center items-center flex-wrap gap-2 md:gap-10  ">
-                <!-- skills 1 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-up">
-                    <img class="w-26 transform transition hover:scale-105 " src="./images/Skills-icon/html-icon.webp" alt="html-icon">
-                    <small class="text-lg tracking-wide font-medium">HTML</small>
-                </article>
-                <!-- skills 2 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-up">
-                    <img class="w-26 transform transition hover:scale-105" src="./images/Skills-icon//css-icon.webp" alt="css-icon">
-                    <small class="text-lg tracking-wide font-medium">CSS</small>
-                </article>
-                <!-- skills 3 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-up">
-                    <img class="w-26 transform transition hover:scale-105"
-                        src="./images/Skills-icon//Js-icon.webp" alt="js-icon">
-                    <small class="text-lg tracking-wide font-medium">Javascript</small>
-                </article>
-
-                <!-- skills 4 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-down">
-                    <img class="w-26 transform transition hover:scale-105" src="./images/Skills-icon//VsCode-icon.webp"
-                        alt="vscode-icon">
-                    <small class="text-lg tracking-wide font-medium">Vs code</small>
-                </article>
-                <!-- skills 5 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-down">
-                    <img class="w-26 transform transition hover:scale-105" src="./images/Skills-icon/tailwind-css-icon.webp"
-                        alt="tailwind-css-icon">
-                    <small class="text-lg tracking-wide font-medium">Tailwind</small>
-                </article>
-                <!-- skills 6 -->
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-down">
-                    <img class="w-26 transform transition hover:scale-105" src="./images/Skills-icon/figma-icon.webp"
-                        alt="tailwind-css-icon">
-                    <small class="text-lg tracking-wide font-medium">Figma</small>
-                </article>
-                <article class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm" data-aos="flip-down">
-                    <img class="w-26 transform transition hover:scale-105" src="./images/Skills-icon/git-1.png"
-                        alt="tailwind-css-icon">
-                    <small class="text-lg tracking-wide font-medium">Git</small>
-                </article>
-
-            </picture>
-
-            <!-- Bubble -->
-            <div class="hidden lg:block absolute size-64 left-10 blur-[300px] rounded-full bottom-10 bg-red -z-100">
-                12
+          <!-- 3_Calculatore -->
+          <article
+            class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+            data-aos="fade-up"
+          >
+            <img
+              src="./images/project_demo_img/calculatore.png"
+              loading="lazy"
+              class="object-fill w-full h-full rounded-t-md md:rounded-sm"
+            />
+            <!-- Layer -->
+            <div
+              class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0 md:duration-300 overflow-hidden"
+            >
+              <div class="flex items-center gap-1 overflow-hidden">
+                <p class="text-xs md:text-2xl">Calculator</p>
+                <i class="bx bx-calculator md:text-3xl"></i>
+              </div>
+              <div class="flex items-center gap-1">
+                <a
+                  href="https://calculator-delta-six-27.vercel.app/"
+                  target="_blank"
+                  class="text-xs md:mt-12"
+                >
+                  Live Demo
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
             </div>
-        </section>
+          </article>
 
-
-        <!-- Contact me -->
-        <section class="mx-auto container px-6 py-28 relative" id="contactMe">
-            <h2 class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14" data-aos="fade-right">
-                Contact <span class="first-letter:text-red inline-block">me</span></h2>
-
-            <div class="max-w-6xl">
-                <!-- Form -->
-                <form action="https://api.web3forms.com/submit" method="POST"
-                    class="mx-auto lg:w-4/6  flex flex-col space-y-5" id="form">
-
-                    <!-- access key input -->
-                    <input type="hidden" name="access_key" value="03090a62-0231-4ad5-b4bc-bff9235fa448">
-
-                    <input class="py-5 border-none outline-none px-4 rounded-sm bg-dark caret-red" type="text"
-                        placeholder="Name" name="name" required data-aos="fade-right">
-                    <input class="py-5 border-none outline-none px-4 rounded-sm bg-dark caret-red" type="email"
-                        placeholder="Email" name="email" required data-aos="fade-right">
-                    <textarea rows="6" class="border-none outline-none p-4 rounded-sm bg-dark caret-red resize-none"
-                        placeholder="Message" name="Message" required data-aos="fade-up"></textarea>
-                    <button type="submit"
-                        class=" block mx-auto px-10 py-1 md:px-16 md:py-2 rounded-md mt-6 text-lg transition-all transform hover:translate-y-1 cursor-pointer  bg-red">Submit
-                    </button>
-                </form>
+          <!-- 4_UpdateCssVariablesWithJS -->
+          <article
+            class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+            data-aos="fade-up"
+          >
+            <img
+              src="./images/project_demo_img/UpdateCssVar.png"
+              loading="lazy"
+              class="object-fill w-full h-full rounded-t-md md:rounded-sm"
+            />
+            <!-- Layer -->
+            <div
+              class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0 md:duration-300 overflow-hidden"
+            >
+              <div class="flex items-center gap-1 overflow-hidden">
+                <p class="text-xs md:text-2xl">Editing Image</p>
+                <i class="bx bx-edit md:text-3xl"></i>
+              </div>
+              <div class="flex items-center gap-1">
+                <a
+                  href="https://update-css-variables-with-js-nu.vercel.app/"
+                  target="_blank"
+                  class="text-xs md:mt-12"
+                >
+                  Live Demo
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
             </div>
+          </article>
 
-            <!-- Bubble -->
-            <div class=" absolute size-42 right-10 blur-[200px] rounded-full bottom-0 bg-red -z-100">
+          <!-- 5_To-Do List App -->
+          <article
+            class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+            data-aos="fade-up"
+          >
+            <img
+              src="./images/project_demo_img/To-DoListApp.png"
+              loading="lazy"
+              class="object-fill w-full h-full rounded-t-md md:rounded-sm"
+            />
+
+            <!-- Layer -->
+            <div
+              class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0 md:duration-300 overflow-hidden"
+            >
+              <div class="flex items-center gap-1 overflow-hidden">
+                <p class="text-xs md:text-2xl">To-Do List App</p>
+                <i class="bx bx-checkbox-checked md:text-4xl"></i>
+              </div>
+              <div class="flex items-center gap-1">
+                <a
+                  href="https://to-do-list-app-seven-zeta.vercel.app/"
+                  target="_blank"
+                  class="text-xs md:mt-12"
+                >
+                  Live Demo
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
             </div>
+          </article>
 
-        </section>
+          <!-- 6_StopWatch -->
+          <article
+            class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
+            data-aos="fade-up"
+          >
+            <img
+              src="./images/project_demo_img/Stopwatch.png"
+              loading="lazy"
+              class="object-center w-full h-full rounded-t-md md:rounded-sm drop-shadow-lg"
+            />
+            <!-- Layer -->
+            <div
+              class="border-2 border-dark rounded-b-sm flex justify-between p-2 md:absolute md:hover:bg-gradient-to-b md:from-black/50 to-red md:-bottom-0 md:left-0 md:w-full md:flex-col md:justify-center md:items-center md:rounded-sm md:h-0 md:group-hover:h-full md:transition-all md:border-0 md:duration-300 overflow-hidden"
+            >
+              <div class="flex items-center gap-1 overflow-hidden">
+                <p class="text-xs md:text-2xl">StopWatch</p>
+                <i class="bx bx-stopwatch md:text-3xl"></i>
+              </div>
+              <div class="flex items-center gap-1">
+                <a
+                  href="https://stop-watch-sigma-six.vercel.app/"
+                  target="_blank"
+                  class="text-xs md:mt-12"
+                >
+                  Live Demo
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills-->
+      <section class="mx-auto container px-6 py-28 relative" id="skills">
+        <h2
+          class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14"
+          data-aos="fade-right"
+        >
+          Skills
+        </h2>
+        <picture
+          class="flex justify-center items-center flex-wrap gap-2 md:gap-10"
+        >
+          <!-- skills 1 -->
+          <article
+            class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm"
+            data-aos="flip-up"
+          >
+            <img
+              class="w-26 transform transition hover:scale-105"
+              src="./images/Skills-icon/html-icon.webp"
+              alt="html-icon"
+            />
+            <small class="text-lg tracking-wide font-medium">HTML</small>
+          </article>
+          <!-- skills 2 -->
+          <article
+            class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm"
+            data-aos="flip-up"
+          >
+            <img
+              class="w-26 transform transition hover:scale-105"
+              src="./images/Skills-icon//css-icon.webp"
+              alt="css-icon"
+            />
+            <small class="text-lg tracking-wide font-medium">CSS</small>
+          </article>
+          <!-- skills 3 -->
+          <article
+            class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm"
+            data-aos="flip-up"
+          >
+            <img
+              class="w-26 transform transition hover:scale-105"
+              src="./images/Skills-icon//Js-icon.webp"
+              alt="js-icon"
+            />
+            <small class="text-lg tracking-wide font-medium">Javascript</small>
+          </article>
+
+          <!-- skills 4 -->
+          <article
+            class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm"
+            data-aos="flip-down"
+          >
+            <img
+              class="w-26 transform transition hover:scale-105"
+              src="./images/Skills-icon//VsCode-icon.webp"
+              alt="vscode-icon"
+            />
+            <small class="text-lg tracking-wide font-medium">Vs code</small>
+          </article>
+          <!-- skills 5 -->
+          <article
+            class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm"
+            data-aos="flip-down"
+          >
+            <img
+              class="w-26 transform transition hover:scale-105"
+              src="./images/Skills-icon/tailwind-css-icon.webp"
+              alt="tailwind-css-icon"
+            />
+            <small class="text-lg tracking-wide font-medium">Tailwind</small>
+          </article>
+          <!-- skills 6 -->
+          <article
+            class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm"
+            data-aos="flip-down"
+          >
+            <img
+              class="w-26 transform transition hover:scale-105"
+              src="./images/Skills-icon/figma-icon.webp"
+              alt="tailwind-css-icon"
+            />
+            <small class="text-lg tracking-wide font-medium">Figma</small>
+          </article>
+          <article
+            class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm"
+            data-aos="flip-down"
+          >
+            <img
+              class="w-26 transform transition hover:scale-105"
+              src="./images/Skills-icon/git-1.png"
+              alt="tailwind-css-icon"
+            />
+            <small class="text-lg tracking-wide font-medium">Git</small>
+          </article>
+        </picture>
+
+        <!-- Bubble -->
+        <div
+          class="hidden lg:block absolute size-64 left-10 blur-[300px] rounded-full bottom-10 bg-red -z-100"
+        >
+          12
+        </div>
+      </section>
+
+      <!-- Contact me -->
+      <section class="mx-auto container px-6 py-28 relative" id="contactMe">
+        <h2
+          class="text-3xl md:text-4xl first-letter:text-red font-medium text-white pb-14"
+          data-aos="fade-right"
+        >
+          Contact <span class="first-letter:text-red inline-block">me</span>
+        </h2>
+
+        <div class="max-w-6xl">
+          <!-- Form -->
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="mx-auto lg:w-4/6 flex flex-col space-y-5"
+            id="form"
+          >
+            <!-- access key input -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="03090a62-0231-4ad5-b4bc-bff9235fa448"
+            />
+
+            <input
+              class="py-5 border-none outline-none px-4 rounded-sm bg-dark caret-red"
+              type="text"
+              placeholder="Name"
+              name="name"
+              required
+              data-aos="fade-right"
+            />
+            <input
+              class="py-5 border-none outline-none px-4 rounded-sm bg-dark caret-red"
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+              data-aos="fade-right"
+            />
+            <textarea
+              rows="6"
+              class="border-none outline-none p-4 rounded-sm bg-dark caret-red resize-none"
+              placeholder="Message"
+              name="Message"
+              required
+              data-aos="fade-up"
+            ></textarea>
+            <button
+              type="submit"
+              class="block mx-auto px-10 py-1 md:px-16 md:py-2 rounded-md mt-6 text-lg transition-all transform hover:translate-y-1 cursor-pointer bg-red"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <!-- Bubble -->
+        <div
+          class="absolute size-42 right-10 blur-[200px] rounded-full bottom-0 bg-red -z-100"
+        ></div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="px-10 h-12 mt-20 flex flex-col items-center justify-center md:flex-row md:justify-between">
-        <!-- Social media icons -->
-        <article class="flex items-center space-x-3 mb-4">
-            <a href="https://t.me/DeveloperBoyy" target="_blank"><i
-                    class='bx bxl-telegram text-2xl cursor-pointer transition hover:text-blue-500 transform hover:-translate-y-2 hover:scale-110'></i></a>
-            <a href="https://www.instagram.com/mehran_7_10" target="_blank"><i
-                    class='bx bxl-instagram text-2xl cursor-pointer transition hover:text-red transform hover:-translate-y-2 hover:scale-110'></i></a>
-            <a href="https://www.whatsapp.com/mehran" target="_blank"><i
-                    class='bx bxl-whatsapp text-2xl cursor-pointer transition hover:text-green-500 transform hover:-translate-y-2 hover:scale-110'></i></a>
-            <a href="https://github.com/" target="_blank"><i
-                    class='bx bxl-github text-2xl cursor-pointer transition transform hover:-translate-y-2 hover:scale-110'></i></a>
+    <footer
+      class="px-10 h-12 mt-20 flex flex-col items-center justify-center md:flex-row md:justify-between"
+    >
+      <!-- Social media icons -->
+      <article class="flex items-center space-x-3 mb-4">
+        <a href="https://t.me/DeveloperBoyy" target="_blank"
+          ><i
+            class="bx bxl-telegram text-2xl cursor-pointer transition hover:text-blue-500 transform hover:-translate-y-2 hover:scale-110"
+          ></i
+        ></a>
+        <a href="https://www.instagram.com/mehran_7_10" target="_blank"
+          ><i
+            class="bx bxl-instagram text-2xl cursor-pointer transition hover:text-red transform hover:-translate-y-2 hover:scale-110"
+          ></i
+        ></a>
+        <a href="https://www.whatsapp.com/mehran" target="_blank"
+          ><i
+            class="bx bxl-whatsapp text-2xl cursor-pointer transition hover:text-green-500 transform hover:-translate-y-2 hover:scale-110"
+          ></i
+        ></a>
+        <a href="https://github.com/" target="_blank"
+          ><i
+            class="bx bxl-github text-2xl cursor-pointer transition transform hover:-translate-y-2 hover:scale-110"
+          ></i
+        ></a>
+      </article>
 
-        </article>
-
-        <!-- Fotter text -->
-        <small class="tracking-wide text-md font-medium flex items-center space-x-4">Created by Mehran <i
-                class='bx bxs-heart text-red'></i></small>
-        <small class="tracking-wide text-md font-medium">mehranmohamdi1311@gmail.com</small>
+      <!-- Fotter text -->
+      <small
+        class="tracking-wide text-md font-medium flex items-center space-x-4"
+        >Created by Mehran <i class="bx bxs-heart text-red"></i
+      ></small>
+      <small class="tracking-wide text-md font-medium"
+        >mehranmohamdi1311@gmail.com</small
+      >
     </footer>
-
-
 
     <!-- Aos Animation; -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-</body>
-
+  </body>
 </html>
