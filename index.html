@@ -44,8 +44,10 @@
       class="fixed bottom-4 right-4 size-12 md:bottom-6 md:right-6 md:size-16 cursor-pointer p-1 rounded-full z-20 transition-all duration-500 translate-x-[150%]"
       id="indicatore"
     >
-      <div class="bg-red w-full h-full rounded-full grid place-content-center">
-        <i class="bx bxs-chevron-up text-lg md:text-2xl"></i>
+      <div
+        class="bg-red w-full h-full rounded-full grid place-content-center text-[1rem] sm:text-xl"
+      >
+        &uarr;
       </div>
     </div>
 
@@ -62,6 +64,7 @@
           >
             Mehran.
           </h1>
+
           <!-- Navbar -->
           <ul class="lg:flex space-x-10 hidden">
             <li class="text-xl list-none">
@@ -87,6 +90,7 @@
               >
             </li>
           </ul>
+
           <!-- Menu Icon -->
           <article class="lg:hidden" id="menubar">
             <i
@@ -95,7 +99,10 @@
           </article>
         </nav>
       </div>
-      <!-- Mobile Menu-->
+    </header>
+
+    <!-- Mobile Menu-->
+    <aside>
       <ul
         class="transform right-[-300px] fixed top-0 h-full w-[300px] rounded-l-2xl space-y-6 bg-gradient-to-b from-red to-[rgb(0, 0, 0)] transition-all duration-300 z-50 pt-28 px-8"
         id="mobile-menu"
@@ -136,7 +143,7 @@
           >
         </li>
       </ul>
-    </header>
+    </aside>
 
     <!-- Main content -->
     <main class="mt-20 sm:mt-0">
@@ -169,6 +176,7 @@
               </article>
             </div>
           </div>
+
           <!-- Hero image -->
           <div
             class="mx-auto relative w-[72vw] h-[72vw] sm:w-76 sm:h-76 p-1 overflow-hidden rounded-full -mt-12 lg:mt-0"
@@ -199,11 +207,11 @@
         >
           Works
         </h2>
+
+        <!-- Projects -->
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center max-w-6xl gap-20 mx-auto"
         >
-          <!-- Projects -->
-
           <!-- 1_Analog Clock -->
           <article
             class="max-w-[24em] h-[24em] md:w-auto mx-auto relative md:overflow-hidden group"
@@ -594,7 +602,7 @@
       <!-- Fotter text -->
       <small
         class="tracking-wide text-md font-medium flex items-center space-x-4"
-        >Created by Mehran <i class="bx bxs-heart text-red"></i
+        >Created by Mehran 💙<i class="bx bxs-heart text-red"></i
       ></small>
       <small class="tracking-wide text-md font-medium"
         >mehranmohamdi1311@gmail.com</small
