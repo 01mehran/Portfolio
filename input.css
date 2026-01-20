@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-poppiens: "Poppins", "serif";
+  --font-poppiens: "Poppins", sans-serif;
 
   --color-red: #ff004f;
   --color-black: #080808;
@@ -21,6 +21,7 @@
     }
   }
 }
+
 @layer components {
   .underlineEffect {
     @apply after:content-[''] after:h-[2px] after:bg-red after:block after:mx-auto after:w-0 hover:after:w-full after:transition-all after:duration-400;
