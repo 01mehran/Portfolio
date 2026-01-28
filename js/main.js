@@ -1,18 +1,20 @@
+// Hide loading when page load;
 window.addEventListener("load", () => {
   const preLoader = document.querySelector("#preLoading");
   preLoader.style.display = "none";
 });
 
-// Selecting Elements;
-const _ = document;
-const openMenu = _.querySelector("#menubar");
-const closeBtn = _.querySelector("#close-btn");
-const mobileMenu = _.querySelector("#mobile-menu");
-const ul = _.querySelector("header ul");
-const indicatoreBtn = _.querySelector("#indicatore");
-const header = _.querySelector("header");
-const form = document.querySelector("#form");
-const links = mobileMenu.querySelectorAll("a");
+// Elements;
+import {
+  _,
+  openMenu,
+  closeBtn,
+  mobileMenu,
+  ul,
+  indicatoreBtn,
+  header,
+  form,
+} from "./dom.js";
 
 const toggleMobileMenu = function (width, display) {
   mobileMenu.style.right = width;

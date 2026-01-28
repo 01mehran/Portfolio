@@ -1,0 +1,9 @@
+// Selecting Elements;
+export const _ = document;
+export const openMenu = _.querySelector("#menubar");
+export const closeBtn = _.querySelector("#close-btn");
+export const mobileMenu = _.querySelector("#mobile-menu");
+export const ul = _.querySelector("header ul");
+export const indicatoreBtn = _.querySelector("#indicatore");
+export const header = _.querySelector("header");
+export const form = document.querySelector("#form");
