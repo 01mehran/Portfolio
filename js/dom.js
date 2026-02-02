@@ -7,3 +7,4 @@ export const ul = _.querySelector("header ul");
 export const indicatoreBtn = _.querySelector("#indicatore");
 export const header = _.querySelector("header");
 export const form = document.querySelector("#form");
+export const projecstWrapper = document.getElementById("projects-wrapper");

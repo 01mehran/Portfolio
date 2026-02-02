@@ -1,9 +1,3 @@
-// Hide loading when page load;
-window.addEventListener("load", () => {
-  const preLoader = document.querySelector("#preLoading");
-  preLoader.style.display = "none";
-});
-
 // Elements;
 import {
   _,
@@ -14,7 +8,21 @@ import {
   indicatoreBtn,
   header,
   form,
+  projecstWrapper,
 } from "./dom.js";
+
+import { projecstBox } from "./projectsUi.js";
+import { projectsDetails } from "./projects.js";
+
+// Hide loading when page load;
+window.addEventListener("load", () => {
+  const preLoader = document.querySelector("#preLoading");
+  preLoader.style.display = "none";
+});
+
+projectsDetails.forEach((project) => {
+  projecstWrapper.insertAdjacentHTML("beforeend", projecstBox(project));
+});
 
 const toggleMobileMenu = function (width, display) {
   mobileMenu.style.right = width;

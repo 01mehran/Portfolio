@@ -345,6 +345,12 @@
   .h-screen {
     height: 100vh;
   }
+  .max-h-\[24em\] {
+    max-height: 24em;
+  }
+  .min-h-\[24em\] {
+    min-height: 24em;
+  }
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
@@ -551,6 +557,9 @@
   .to-red {
     --tw-gradient-to: var(--color-red);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .object-cover {
     object-fit: cover;
@@ -805,6 +814,11 @@
   .sm\:w-76 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 76);
+    }
+  }
+  .sm\:object-fill {
+    @media (width >= 40rem) {
+      object-fit: fill;
     }
   }
   .sm\:pt-34 {
