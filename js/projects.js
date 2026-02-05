@@ -50,3 +50,34 @@ export const projectsDetails = [
     demoUrl: "https://01mehran.github.io/Crypto-Exchange-App/",
   },
 ];
+
+export const mySkills = [
+  {
+    skillIcon: "../images/Skills-icon/html-icon.webp",
+    name: "HTMl",
+  },
+  {
+    skillIcon: "../images/Skills-icon/css-icon.webp",
+    skillName: "CSS",
+  },
+  {
+    skillIcon: "../images/Skills-icon/Js-icon.webp",
+    skillName: "javascript",
+  },
+  {
+    skillIcon: "../images/Skills-icon/VsCode-icon.webp",
+    skillName: "vs code",
+  },
+  {
+    skillIcon: "../images/Skills-icon/tailwind-css-icon.webp",
+    skillName: "tailwind",
+  },
+  {
+    skillIcon: "../images/Skills-icon/figma-icon.webp",
+    skillName: "figma",
+  },
+  {
+    skillIcon: "../images/Skills-icon/git.png",
+    skillName: "git",
+  },
+];

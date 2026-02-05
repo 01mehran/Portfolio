@@ -31,3 +31,18 @@ export function projecstBox({ src, projectIcon, projectName, demoUrl }) {
     </article>
      `;
 }
+
+export function skillsBox({ skillIcon, skillName }) {
+  return `   
+     <article
+         class="bg-dark p-4 flex flex-col items-center space-y-4 rounded-sm"
+          data-aos="flip-up"
+      >
+        <img
+          class="w-26 transform transition hover:scale-105"
+          src=${skillIcon}
+            alt="html-icon"
+        />
+        <small class="text-lg tracking-wide font-medium">${skillName}</small>
+    </article>`;
+}

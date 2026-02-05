@@ -9,10 +9,11 @@ import {
   header,
   form,
   projecstWrapper,
+  skillsWrapper,
 } from "./dom.js";
 
-import { projecstBox } from "./projectsUi.js";
-import { projectsDetails } from "./projects.js";
+import { projecstBox, skillsBox } from "./projectsUi.js";
+import { mySkills, projectsDetails } from "./projects.js";
 
 // Hide loading when page load;
 window.addEventListener("load", () => {
@@ -22,6 +23,10 @@ window.addEventListener("load", () => {
 
 projectsDetails.forEach((project) => {
   projecstWrapper.insertAdjacentHTML("beforeend", projecstBox(project));
+});
+
+mySkills.forEach((skill) => {
+  skillsWrapper.insertAdjacentHTML("beforeend", skillsBox(skill));
 });
 
 const toggleMobileMenu = function (width, display) {

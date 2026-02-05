@@ -8,3 +8,4 @@ export const indicatoreBtn = _.querySelector("#indicatore");
 export const header = _.querySelector("header");
 export const form = document.querySelector("#form");
 export const projecstWrapper = document.getElementById("projects-wrapper");
+export const skillsWrapper = document.getElementById("skills-wrapper");
